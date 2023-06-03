@@ -1,0 +1,31 @@
+<p>alex works!</p>
+<button class="but" type="button" routerLink="">home</button>
+<button class="but" type="button" routerLink="/contact">contact_us</button>
+
+
+
+<h1>{{hottle}}</h1>
+<h1> numer of rooms - {{numberofrooms}}</h1>
+<h1>rooms--</h1>
+<h1 [innerText]="numberofrooms"></h1>  
+<hr>
+
+<div class="container">
+    <button class="order-button" (click)="invaluecom()"  >orders</button>
+    <div *ngIf="value; then thenblock else elseblock"></div>
+
+    <ng-template #thenblock>
+        <div> all are the iteam. which all are selected by you</div>
+    </ng-template>
+
+    <ng-template #elseblock>
+        <div>yet to order !!</div>
+    </ng-template>
+    
+    
+
+
+
+
+
+</div>   
