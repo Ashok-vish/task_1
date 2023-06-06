@@ -1,14 +1,94 @@
-<header>
-    <!-- <p>home works!</p> -->
-    <br>
 
-<button class="but" type="button" routerLink="">home</button>
-<button class="but" type="button" routerLink="/alex">detail_user</button>
-<button class="but" type="button" routerLink="/contact">contact_us</button>
-<br>
+    <!-- <p>home works!</p> -->
+  <!-- using angular material -->
+
+  
+ 
+
+
+
+    <hr>
+    <header>
+<div><button class="but1" type="button" routerLink="">home</button>
+    <button class="but" type="button" routerLink="/alex">detail_user</button>
+    <button class="but" type="button" routerLink="/contact">contact_us</button></div>
+
+
 
 </header>
 <!-- directive is used to command or instruct the dom  -->
-<h1 app-home >custom directive in home</h1>
+<h1 appDirec >custom directive in home</h1>
+<span (mouseover)="mouse()" >mouse events handle</span>
 
-<app-text1></app-text1>
+
+<input type="text">
+<button (click)="eventbinding()">click me</button>
+
+<!-- ternary operator used for style binding -->
+<h1 [style.color]="condition?'red':'blue'">css effect using style binding</h1>
+
+
+<!--  two way binding using ngmodel-->
+<br>Name:- <input type="text" [(ngModel)]="text "><br>
+your name is(using eventbinding) :-  {{text}}
+
+
+<!-- switch case (directives) -->
+<!-- <div [ngSwitch]="colours"> -->
+<div ngSwitch={{colours}}>
+    <h1 style="color:red"  *ngSwitchCase="'red'">red in colour using switch case</h1>
+    <h1 style="color:blue" *ngSwitchCase="'blue'">blue in colour using switch case </h1>
+    <h1 style="color:green" *ngSwitchCase="'green'">green in colour using switch case </h1>
+</div>
+
+<!-- ng for  -->
+
+<div>
+    <!-- <table>
+        <tr>
+        <th>Name</th>
+        <th>age</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let value of users">
+                <td>{{value.name}}</td>
+                <td>{{value.age}}</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <ol>
+        <li *ngFor="let data of user">{{data}}</li>
+    </ol>
+
+    <table>
+        <tr>
+            <th>NAME</th>
+            <th>Age</th>
+        </tr>
+        <tr *ngFor="let data of users">
+            <td>{{data.name}}</td>
+            <td>{{data.age}}</td>
+        </tr>
+    </table>
+<br><br>
+without using foreach loop/ <br>
+Converting from lower case to uppercase:- {{capital}}
+</div>
+
+<hr>
+
+<!-- pipes -->
+
+
+
+
+
+
+
+
+
+
+
+
+

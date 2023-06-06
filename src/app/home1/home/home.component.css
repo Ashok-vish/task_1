@@ -1,10 +1,30 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.toolbox{
+    background-color: rgb(207, 198, 214)
+}
+
+.sh , .fav , .me{
+    font-size: small;
+    background: size 5%; ;
+}
+
+
 .but{
     color:rgb(13, 14, 13);
     background: #3498db;
     left:0;
-    
+    margin-left: 90%;
 }
-
+.but1{
+    color:rgb(13, 14, 13);
+    background: #3498db;
+    left:0;
+    margin-left: 90%;
+    width: 80px;
+}
 header{
     background-color: red;
 }
