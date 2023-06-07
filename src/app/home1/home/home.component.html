@@ -2,12 +2,7 @@
     <!-- <p>home works!</p> -->
   <!-- using angular material -->
 
-  
- 
-
-
-
-    <hr>
+  <h1 appDirectiveHome1>custom directive</h1>
     <header>
 <div><button class="but1" type="button" routerLink="">home</button>
     <button class="but" type="button" routerLink="/alex">detail_user</button>
@@ -17,10 +12,12 @@
 
 </header>
 <!-- directive is used to command or instruct the dom  -->
+
 <h1 appDirec >custom directive in home</h1>
+<!-- <h1 appDirectiveHome1   ~ >custom directive in home</h1> -->
 <span (mouseover)="mouse()" >mouse events handle</span>
 
-
+<br>
 <input type="text">
 <button (click)="eventbinding()">click me</button>
 
@@ -30,7 +27,7 @@
 
 <!--  two way binding using ngmodel-->
 <br>Name:- <input type="text" [(ngModel)]="text "><br>
-your name is(using eventbinding) :-  {{text}}
+your name is(using two way binding) :- {{text}}
 
 
 <!-- switch case (directives) -->
@@ -43,19 +40,8 @@ your name is(using eventbinding) :-  {{text}}
 
 <!-- ng for  -->
 
-<div>
-    <!-- <table>
-        <tr>
-        <th>Name</th>
-        <th>age</th>
-        </tr>
-        <tbody>
-            <tr *ngFor="let value of users">
-                <td>{{value.name}}</td>
-                <td>{{value.age}}</td>
-            </tr>
-        </tbody>
-    </table> -->
+
+ 
 
     <ol>
         <li *ngFor="let data of user">{{data}}</li>
@@ -74,11 +60,15 @@ your name is(using eventbinding) :-  {{text}}
 <br><br>
 without using foreach loop/ <br>
 Converting from lower case to uppercase:- {{capital}}
-</div>
+
 
 <hr>
 
 <!-- pipes -->
+
+<input #textinfo type="text" name="" placeholder="using ref">
+<button (click)="getvalue(textinfo)" type="button" >click me</button> 
+
 
 
 

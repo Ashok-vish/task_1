@@ -21,11 +21,50 @@
     <ng-template #elseblock>
         <div>yet to order !!</div>
     </ng-template>
+</div>
+<br><br><br><br>
     
-    
+
+    <!-- using push and splice -->
+<h1>using push and splice method in ngfor loop</h1>
+<input #insert  type="text" name="" placeholder="enter yout name">
+  <button (click)="getthevalue(insert)">Add</button><br><br>
+   <br> 
+
+  
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>user_detail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr *ngFor="let user of users ; index as i"> -->
+                <tr *ngFor="let user of users ; let i =index">
+                    <td>{{user}}</td>
+                    <td><button (click)="removevalue(i)">remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  
+
+   
 
 
 
 
 
-</div>   
+
+
+
+
+ 
+
+
+
+
+
+
+  

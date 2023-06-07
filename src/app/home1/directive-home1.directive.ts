@@ -10,5 +10,6 @@ export class DirectiveHome1Directive {
   element.nativeElement.style.backgroundColor = 'yellow';
 
   }
+  
 
 }

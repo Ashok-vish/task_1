@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     console.log(".");
   }
 
-  mouse(){
+    mouse(){
     console.log("mouse");
   
   }
@@ -66,7 +66,10 @@ export class HomeComponent implements OnInit {
  
   // pipes example
 
- 
+  getvalue(textinfo:any){
+    console.log(textinfo.value);
+    
+  }
 
 
 }
