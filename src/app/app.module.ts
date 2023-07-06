@@ -8,6 +8,10 @@ import { Home1Module } from './home1/home1.module';
 // import { Mod2Module } from './mod2/mod2.module';
 import { ContactModule } from './contact/contact.module';
 import { PiiPipe } from './pii.pipe';
+import { ParentComponent } from './parent/parent.component';
+
+import { ChildComponent } from './child/child.component';
+import { Parent2Component } from './parent2/parent2.component';
 
 
 
@@ -17,7 +21,11 @@ import { PiiPipe } from './pii.pipe';
   declarations: [
     AppComponent,
     AlexComponent,
+    ParentComponent,
+    ChildComponent,
     PiiPipe,
+    Parent2Component,
+    
     
    
   ],

@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'pii'
 })
 export class PiiPipe implements PipeTransform {
-value=5
+  value!: number;
   transform(value:any): unknown {
     value=value*2
 
